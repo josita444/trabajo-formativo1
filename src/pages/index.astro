@@ -1,16 +1,41 @@
+
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<link rel="stylesheet" href="static/css/global.css" />
+<link rel="stylesheet" href="static/css/inicio.css" />
+<Header />
+
+<main>
+  <section class="hero">
+    <div class="hero-texto">
+      <span class="etiqueta">CREATIVIDAD SIN LIMITES</span>
+      <h1>El arte de expresar lo que somos</h1>
+      <p>
+        Descubre un mundo lleno de colores, ideas y experiencias.
+        En ArteVivo celebramos la creatividad a traves de la
+        fotografia y los talleres artisticos.
+      </p>
+      <a href="/talleres" class="boton">Explorar talleres</a>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=80"
+      alt="Materiales y pinturas de arte"
+    />
+  </section>
+
+  <section class="bienvenida">
+    <h2>Un espacio para crear</h2>
+    <p>
+      Creemos que todas las personas tienen una forma unica de
+      expresarse. Nuestro objetivo es inspirar, ensenar y compartir
+      nuevas formas de ver el mundo mediante el arte.
+    </p>
+    <a href="/fotografia" class="boton">Descubrir fotografía</a>
+  </section>
+</main>
+
+<Footer />

@@ -1,0 +1,32 @@
+
+<header class="header">
+  <a class="logo" href="/">
+    <span class="logo-icon">Jo</span>
+    <span>ArteVivo</span>
+  </a>
+
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/fotografia">Fotografia</a>
+    <a href="/talleres">Talleres</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+
+  <button id="btnLuz" class="btn-luz" type="button"
+  aria-label="Activar o desactivar iluminación">
+   Efecto magico
+</button>
+</header>
+
+
+<script>
+  const btnLuz = document.querySelector("#btnLuz");
+
+  btnLuz?.addEventListener("click", () => {
+    document.body.classList.toggle("sin-brillo");
+
+    btnLuz.textContent = document.body.classList.contains("sin-brillo")
+      ? "💡 Activar brillo"
+      : "✨ efecto mágico";
+  });
+</script>

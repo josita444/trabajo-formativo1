@@ -1,0 +1,56 @@
+
+
+---
+import Header from "/components/header.astro";
+import Footer from "/components/footer.astro";
+---
+
+<link rel="stylesheet" href="static/css/global.css" />
+<link rel="stylesheet" href="static/css/fotografia.css" />
+<Header />
+
+<main>
+  <section class="contenedor fotografia">
+    <div class="encabezado-foto">
+      <h1>El mundo a traves de una lente</h1>
+      <p>
+        La fotografia nos permite capturar momentos, emociones
+        y detalles que muchas veces pasan desapercibidos.
+        Explora diferentes formas de contar historias con imagenes.
+      </p>
+    </div>
+
+    <div class="galeria">
+      <article class="foto-card">
+        <img
+          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+          alt="Paisaje natural entre montañas"
+        />
+        <h2>Fotografia de paisajes</h2>
+        <p>Descubre la belleza de la naturaleza y sus colores.</p>
+      </article>
+
+      <article class="foto-card">
+        <img
+          src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=800&q=80"
+          alt="Paisaje iluminado por la luz del atardecer"
+        />
+        <h2>Luz y color</h2>
+        <p>Aprende a capturar diferentes ambientes y emociones.</p>
+      </article>
+
+      <article class="foto-card">
+        <img
+          src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80"
+          alt="Cámara fotográfica"
+        />
+        <h2>El arte de fotografiar</h2>
+        <p>Experimenta con encuadres, perspectivas y composicion.</p>
+      </article>
+    </div>
+
+    <a class="boton" href="/talleres">Conoce nuestros talleres</a>
+  </section>
+</main>
+
+<Footer />
