@@ -1,41 +1,891 @@
 
+
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import "../styles/global.css";
 ---
 
-<link rel="stylesheet" href="static/css/global.css" />
-<link rel="stylesheet" href="static/css/inicio.css" />
-<Header />
-
-<main>
-  <section class="hero">
-    <div class="hero-texto">
-      <span class="etiqueta">CREATIVIDAD SIN LIMITES</span>
-      <h1>El arte de expresar lo que somos</h1>
-      <p>
-        Descubre un mundo lleno de colores, ideas y experiencias.
-        En ArteVivo celebramos la creatividad a traves de la
-        fotografia y los talleres artisticos.
-      </p>
-      <a href="/talleres" class="boton">Explorar talleres</a>
-    </div>
-
-    <img
-      src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=80"
-      alt="Materiales y pinturas de arte"
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211038" />
+    <meta
+      name="description"
+      content="Descubre ArteVivo, un espacio para explorar la fotografía, el arte y la creatividad."
     />
-  </section>
+    <title>ArteVivo | El arte de expresarte</title>
+  </head>
 
-  <section class="bienvenida">
-    <h2>Un espacio para crear</h2>
-    <p>
-      Creemos que todas las personas tienen una forma unica de
-      expresarse. Nuestro objetivo es inspirar, ensenar y compartir
-      nuevas formas de ver el mundo mediante el arte.
-    </p>
-    <a href="/fotografia" class="boton">Descubrir fotografía</a>
-  </section>
-</main>
+  <body>
+    <Header />
 
-<Footer />
+    <main>
+      <!-- PORTADA PRINCIPAL -->
+      <section class="hero">
+        <div class="luz luz-uno"></div>
+        <div class="luz luz-dos"></div>
+
+        <div class="hero-texto">
+          <span class="etiqueta">
+            <span class="punto"></span>
+            BIENVENIDO A ARTEVIVO
+          </span>
+
+          <h1>
+            El arte de expresar
+            <span>lo que somos.</span>
+          </h1>
+
+          <p>
+            Descubre un universo de colores, ideas y experiencias.
+            Inspírate, experimenta y encuentra tu propia forma de
+            ver el mundo a través del arte.
+          </p>
+
+          <div class="hero-botones">
+            <a href="/talleres" class="boton boton-principal">
+              Explorar talleres <span>↗</span>
+            </a>
+
+            <a href="/fotografia" class="boton boton-secundario">
+              Descubrir fotografía
+            </a>
+          </div>
+
+          <div class="hero-datos">
+            <div>
+              <strong>01</strong>
+              <span>Imagina</span>
+            </div>
+            <div class="separador"></div>
+            <div>
+              <strong>02</strong>
+              <span>Experimenta</span>
+            </div>
+            <div class="separador"></div>
+            <div>
+              <strong>03</strong>
+              <span>Crea</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="marco-brillante"></div>
+
+          <div class="imagen-principal">
+            <img
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=85"
+              alt="Colores, pinturas y materiales para crear arte"
+              fetchpriority="high"
+            />
+          </div>
+
+          <div class="etiqueta-flotante">
+            <span class="estrella">✳</span>
+            <div>
+              <strong>Tu creatividad</strong>
+              <span>No tiene límites</span>
+            </div>
+          </div>
+
+          <div class="circulo-decorativo circulo-amarillo"></div>
+          <div class="circulo-decorativo circulo-rosa"></div>
+          <span class="destello destello-uno">✦</span>
+          <span class="destello destello-dos">✧</span>
+        </div>
+
+        <div class="texto-inferior">
+          <span>UN LUGAR PARA INSPIRARTE</span>
+          <span class="flecha-abajo">↓</span>
+        </div>
+      </section>
+
+      <!-- BIENVENIDA -->
+      <section class="bienvenida">
+        <div class="bienvenida-imagen">
+          <img
+            src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=85"
+            alt="Materiales artísticos y una obra llena de color"
+            loading="lazy"
+          />
+          <span class="sello">ARTE<br />VIVO</span>
+        </div>
+
+        <div class="bienvenida-texto">
+          <span class="subtitulo">MUCHO MÁS QUE ARTE</span>
+
+          <h2>
+            Cada idea tiene un color.
+            <span>Cada persona, una historia.</span>
+          </h2>
+
+          <p>
+            Creemos que todas las personas tienen una forma única de
+            expresarse. Nuestro objetivo es inspirar, enseñar y compartir
+            nuevas formas de ver el mundo mediante el arte.
+          </p>
+
+          <p>
+            Queremos que encuentres un espacio donde puedas experimentar,
+            descubrir tus talentos y dejar volar tu imaginación.
+          </p>
+
+          <a href="/fotografia" class="enlace">
+            Descubre el mundo de la fotografía <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECCIÓN DESTACADA -->
+      <section class="experiencias">
+        <div class="experiencias-encabezado">
+          <span class="subtitulo">TU PRÓXIMA INSPIRACIÓN</span>
+          <h2>Descubre lo que puedes <span>crear.</span></h2>
+          <p>
+            Explora diferentes formas de expresión y encuentra la
+            experiencia que conecte contigo.
+          </p>
+        </div>
+
+        <div class="experiencias-grid">
+          <a href="/fotografia" class="experiencia experiencia-foto">
+            <img
+              src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=85"
+              alt="Cámara fotográfica para explorar la fotografía"
+              loading="lazy"
+            />
+            <div class="experiencia-contenido">
+              <span>01 — OBSERVA EL MUNDO</span>
+              <h3>Fotografía</h3>
+              <p>Captura momentos y cuenta historias con imágenes.</p>
+              <span class="experiencia-flecha">↗</span>
+            </div>
+          </a>
+
+          <a href="/talleres" class="experiencia experiencia-taller">
+            <img
+              src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=85"
+              alt="Pintura y materiales para talleres artísticos"
+              loading="lazy"
+            />
+            <div class="experiencia-contenido">
+              <span>02 — DA VIDA A TUS IDEAS</span>
+              <h3>Talleres artísticos</h3>
+              <p>Experimenta, aprende y crea a tu propio ritmo.</p>
+              <span class="experiencia-flecha">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- CIERRE -->
+      <section class="cierre">
+        <div class="cierre-destello">✳</div>
+        <span>TODO COMIENZA CON UNA IDEA</span>
+        <h2>El mundo necesita un poco más de tu creatividad.</h2>
+        <a href="/talleres" class="boton boton-amarillo">
+          Empieza a crear <span>↗</span>
+        </a>
+      </section>
+    </main>
+
+    <Footer />
+
+    <style>
+      :global(*) {
+        box-sizing: border-box;
+      }
+
+      :global(html) {
+        scroll-behavior: smooth;
+      }
+
+      :global(body) {
+        margin: 0;
+        background: #fff9fd;
+        color: #2b203c;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      :global(a) {
+        text-decoration: none;
+      }
+
+      /* PORTADA CON LUCES */
+
+      .hero {
+        position: relative;
+        isolation: isolate;
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: 45px;
+        min-height: 680px;
+        padding: 75px 8% 105px;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse at 75% 45%, #8d36d94d, transparent 42%),
+          linear-gradient(125deg, #211038, #321750 55%, #18122f);
+        color: white;
+      }
+
+      .luz {
+        position: absolute;
+        z-index: -1;
+        width: 330px;
+        height: 330px;
+        border-radius: 50%;
+        filter: blur(100px);
+        pointer-events: none;
+      }
+
+      .luz-uno {
+        top: -120px;
+        left: 22%;
+        background: #e33d91;
+        opacity: 0.5;
+      }
+
+      .luz-dos {
+        right: 5%;
+        bottom: -150px;
+        background: #703cff;
+        opacity: 0.65;
+      }
+
+      .hero-texto {
+        position: relative;
+        z-index: 2;
+        max-width: 610px;
+      }
+
+      .etiqueta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 15px;
+        border: 1px solid #ffffff38;
+        border-radius: 30px;
+        background: #ffffff0c;
+        color: #f5d9ff;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+      }
+
+      .punto {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #ffe34d;
+        box-shadow: 0 0 12px #ffe34d;
+      }
+
+      .hero h1 {
+        margin: 28px 0 22px;
+        font-size: clamp(43px, 5.4vw, 72px);
+        font-weight: 800;
+        line-height: 1.06;
+        letter-spacing: -3px;
+      }
+
+      .hero h1 span {
+        display: block;
+        color: #ff79bf;
+        text-shadow: 0 0 30px #e33d9140;
+      }
+
+      .hero-texto > p {
+        max-width: 490px;
+        color: #e4d8f0;
+        font-size: 16px;
+        line-height: 1.9;
+      }
+
+      .hero-botones {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      .boton {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        padding: 15px 20px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 800;
+        transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+      }
+
+      .boton:hover {
+        transform: translateY(-4px);
+      }
+
+      .boton-principal {
+        background: #ffe34d;
+        color: #2b193e;
+        box-shadow: 0 0 25px #ffe34d38;
+      }
+
+      .boton-principal:hover {
+        background: white;
+        box-shadow: 0 0 35px #ffe34d60;
+      }
+
+      .boton-secundario {
+        border-color: #ffffff50;
+        color: white;
+      }
+
+      .boton-secundario:hover {
+        background: #ffffff15;
+      }
+
+      .hero-datos {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-top: 48px;
+      }
+
+      .hero-datos div:not(.separador) {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .hero-datos strong {
+        color: #ff79bf;
+        font-size: 19px;
+      }
+
+      .hero-datos span {
+        color: #d8c9e7;
+        font-size: 11px;
+      }
+
+      .separador {
+        width: 1px;
+        height: 32px;
+        background: #ffffff35;
+      }
+
+      /* IMAGEN PROTAGONISTA */
+
+      .hero-visual {
+        position: relative;
+        z-index: 1;
+        padding: 18px;
+      }
+
+      .marco-brillante {
+        position: absolute;
+        inset: 0;
+        border: 1px solid #e87aff80;
+        border-radius: 48% 48% 25px 25px;
+        box-shadow:
+          0 0 25px #d84dff30,
+          inset 0 0 25px #d84dff12;
+        transform: rotate(4deg);
+      }
+
+      .imagen-principal {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #ffffff25;
+        border-radius: 48% 48% 22px 22px;
+        box-shadow:
+          0 0 30px #d34aff40,
+          0 20px 65px #00000045;
+      }
+
+      .imagen-principal img {
+        display: block;
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+        transition: transform 0.6s;
+      }
+
+      .imagen-principal:hover img {
+        transform: scale(1.06);
+      }
+
+      .etiqueta-flotante {
+        position: absolute;
+        right: -15px;
+        bottom: 45px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 20px;
+        border: 1px solid #ffffff75;
+        border-radius: 14px;
+        background: #fffdf8;
+        color: #2b203c;
+        box-shadow: 0 12px 35px #00000030;
+        transform: rotate(-3deg);
+      }
+
+      .estrella {
+        color: #e33d91;
+        font-size: 35px;
+      }
+
+      .etiqueta-flotante div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .etiqueta-flotante strong {
+        font-size: 13px;
+      }
+
+      .etiqueta-flotante div span {
+        color: #75687f;
+        font-size: 11px;
+      }
+
+      .circulo-decorativo {
+        position: absolute;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      .circulo-amarillo {
+        top: 12%;
+        right: 1%;
+        background: #ffe34d;
+        box-shadow: 0 0 25px #ffe34d;
+      }
+
+      .circulo-rosa {
+        bottom: 20%;
+        left: -3%;
+        width: 13px;
+        height: 13px;
+        background: #ff79bf;
+        box-shadow: 0 0 20px #ff79bf;
+      }
+
+      .destello {
+        position: absolute;
+        color: #ffe34d;
+        text-shadow: 0 0 18px #ffe34d;
+      }
+
+      .destello-uno {
+        top: 4%;
+        left: 5%;
+        font-size: 35px;
+      }
+
+      .destello-dos {
+        right: -4%;
+        bottom: 12%;
+        font-size: 43px;
+        color: #ff79bf;
+        text-shadow: 0 0 18px #ff79bf;
+      }
+
+      .texto-inferior {
+        position: absolute;
+        right: 8%;
+        bottom: 27px;
+        left: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 17px;
+        border-top: 1px solid #ffffff25;
+        color: #c9b8dd;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .flecha-abajo {
+        color: #ffe34d;
+        font-size: 21px;
+      }
+
+      /* BIENVENIDA */
+
+      .bienvenida {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: center;
+        gap: 75px;
+        padding: 100px 10%;
+        background:
+          radial-gradient(ellipse at 0% 50%, #f3d4ff65, transparent 42%),
+          #fff9fd;
+      }
+
+      .bienvenida-imagen {
+        position: relative;
+      }
+
+      .bienvenida-imagen img {
+        display: block;
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 12px 12px 0 #e8d5ff;
+      }
+
+      .sello {
+        position: absolute;
+        right: -20px;
+        bottom: 25px;
+        display: grid;
+        width: 85px;
+        height: 85px;
+        place-content: center;
+        border: 4px solid white;
+        border-radius: 50%;
+        background: #ffe34d;
+        color: #321750;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 1.3;
+        text-align: center;
+        transform: rotate(10deg);
+      }
+
+      .subtitulo {
+        color: #d73591;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+
+      .bienvenida h2 {
+        margin: 17px 0 22px;
+        font-size: clamp(31px, 4vw, 45px);
+        line-height: 1.2;
+      }
+
+      .bienvenida h2 span {
+        display: block;
+        color: #7738ce;
+      }
+
+      .bienvenida-texto > p {
+        color: #6e6478;
+        font-size: 14px;
+        line-height: 1.9;
+      }
+
+      .enlace {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e33d91;
+        color: #6d31cb;
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .enlace span {
+        font-size: 19px;
+      }
+
+      /* EXPERIENCIAS */
+
+      .experiencias {
+        padding: 85px 9%;
+        background: #f4edfc;
+      }
+
+      .experiencias-encabezado {
+        max-width: 720px;
+        margin: 0 auto 40px;
+        text-align: center;
+      }
+
+      .experiencias-encabezado h2 {
+        margin: 15px 0;
+        font-size: clamp(30px, 4vw, 44px);
+      }
+
+      .experiencias-encabezado h2 span {
+        color: #e33d91;
+      }
+
+      .experiencias-encabezado p {
+        color: #71677c;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .experiencias-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+      }
+
+      .experiencia {
+        position: relative;
+        display: block;
+        min-height: 390px;
+        overflow: hidden;
+        border-radius: 20px;
+        background: #321750;
+        color: white;
+        box-shadow: 0 12px 30px #43205f18;
+      }
+
+      .experiencia::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          0deg,
+          #1d1038f2 0%,
+          #1d103880 40%,
+          transparent 100%
+        );
+        content: "";
+      }
+
+      .experiencia img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+
+      .experiencia:hover img {
+        transform: scale(1.06);
+      }
+
+      .experiencia-contenido {
+        position: absolute;
+        z-index: 1;
+        right: 28px;
+        bottom: 25px;
+        left: 28px;
+      }
+
+      .experiencia-contenido > span:first-child {
+        color: #ffe34d;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+      }
+
+      .experiencia h3 {
+        margin: 12px 0 8px;
+        font-size: 29px;
+      }
+
+      .experiencia p {
+        max-width: 360px;
+        margin-bottom: 0;
+        color: #eee4f7;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .experiencia-flecha {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        width: 43px;
+        height: 43px;
+        place-items: center;
+        border-radius: 50%;
+        background: #ffe34d;
+        color: #321750;
+        font-size: 22px;
+        transition: transform 0.25s;
+      }
+
+      .experiencia:hover .experiencia-flecha {
+        transform: rotate(45deg);
+      }
+
+      /* CIERRE DESTACADO */
+
+      .cierre {
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 85px 8%;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse at 15% 50%, #e33d9140, transparent 40%),
+          radial-gradient(ellipse at 85% 50%, #8d36d955, transparent 45%),
+          #211038;
+        color: white;
+        text-align: center;
+      }
+
+      .cierre-destello {
+        margin-bottom: 15px;
+        color: #ffe34d;
+        font-size: 43px;
+        text-shadow: 0 0 25px #ffe34d80;
+      }
+
+      .cierre > span {
+        color: #ff79bf;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+
+      .cierre h2 {
+        max-width: 700px;
+        margin: 20px 0 28px;
+        font-size: clamp(30px, 4.5vw, 48px);
+        line-height: 1.2;
+      }
+
+      .boton-amarillo {
+        background: #ffe34d;
+        color: #321750;
+      }
+
+      .boton-amarillo:hover {
+        background: white;
+        box-shadow: 0 0 30px #ffe34d40;
+      }
+
+      /* ADAPTACIÓN A CELULARES */
+
+      @media (max-width: 850px) {
+        .hero {
+          grid-template-columns: 1fr 0.85fr;
+          gap: 25px;
+          padding-right: 6%;
+          padding-left: 6%;
+        }
+
+        .hero h1 {
+          font-size: 48px;
+          letter-spacing: -1.5px;
+        }
+
+        .imagen-principal img {
+          height: 360px;
+        }
+
+        .hero-datos {
+          gap: 12px;
+        }
+
+        .bienvenida {
+          gap: 40px;
+          padding: 75px 7%;
+        }
+
+        .experiencias {
+          padding-right: 6%;
+          padding-left: 6%;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 45px;
+          padding: 55px 7% 90px;
+        }
+
+        .hero h1 {
+          font-size: clamp(43px, 10vw, 58px);
+        }
+
+        .hero-texto > p {
+          font-size: 14px;
+        }
+
+        .hero-datos {
+          margin-top: 32px;
+        }
+
+        .hero-visual {
+          max-width: 430px;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .imagen-principal img {
+          height: 360px;
+        }
+
+        .etiqueta-flotante {
+          right: -5px;
+        }
+
+        .texto-inferior {
+          right: 7%;
+          left: 7%;
+          font-size: 8px;
+        }
+
+        .bienvenida {
+          grid-template-columns: 1fr;
+          gap: 45px;
+          padding: 65px 8%;
+        }
+
+        .bienvenida-imagen img {
+          height: 300px;
+        }
+
+        .sello {
+          right: -10px;
+        }
+
+        .experiencias {
+          padding: 65px 7%;
+        }
+
+        .experiencias-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .experiencia {
+          min-height: 350px;
+        }
+
+        .cierre {
+          padding: 65px 7%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        :global(html) {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+        }
+      }
+    </style>
+  </body>
+</html>
